@@ -1,0 +1,62 @@
+{
+  "name": "client",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "remix watch",
+    "build": "remix build"
+  },
+  "dependencies": {
+    "@remix-run/express": "latest",
+    "@remix-run/node": "latest",
+    "@remix-run/react": "latest",
+    "@remix-run/serve": "latest",
+    "isbot": "~3.6.13",
+    "nest-remix": "0.0.1-alpha6",
+    "react": "~18.2.0",
+    "react-dom": "~18.2.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.2.0",
+    "server": "workspace:*"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "latest",
+    "@remix-run/eslint-config": "latest",
+    "@tsconfig/recommended": "^1.0.2",
+    "@types/express": "^4.17.13",
+    "@types/jest": "29.2.4",
+    "@types/node": "18.11.18",
+    "@types/react": "latest",
+    "@types/react-dom": "^18.0.11",
+    "@types/supertest": "^2.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "concurrently": "latest",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "29.3.1",
+    "prettier": "^2.3.2",
+    "typescript": "^4.7.4"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}

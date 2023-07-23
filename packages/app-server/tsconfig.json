@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "nodenext",
+    "baseUrl": "./src",
+    "paths": {
+      "@client": ["./src/client/*"],
+      "@server": ["./src/server/*"]
+    },
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "incremental": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2022",
+    "lib": ["ES2022"],
+    "outDir": "./dist",
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "include": ["./src"],
+  "exclude": [
+    "./node_modules", "test", "dist", "**/*spec.ts", "src/**/*.tsx"]
+}

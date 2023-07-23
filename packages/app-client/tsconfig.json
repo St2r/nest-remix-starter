@@ -1,0 +1,24 @@
+{
+  "extends": "../tsconfig.common.json",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@client": ["./src/client/*"],
+      "@server": ["./src/server/*"]
+    },
+    "sourceMap": true,
+    "incremental": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": ["DOM"],
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "moduleResolution": "node"
+  },
+  "include": ["src/"]
+}
